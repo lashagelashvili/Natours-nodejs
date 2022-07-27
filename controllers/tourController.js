@@ -145,7 +145,7 @@ exports.getDistances = catchAsync(async (req, res, next) => {
           coordinates: [lng * 1, lat * 1],
         },
         distanceField: 'distance',
-        distanceMultiplier: 0.001,
+        distanceMultiplier: multiplier,
       },
     },
     {
